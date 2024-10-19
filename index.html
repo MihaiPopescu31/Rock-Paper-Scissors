@@ -3,10 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <h1>Hello Everyone!!!</h1>
+    <!--Adding the title-->
+    <h1>ROCK PAPER SCISSORS</h1>
+    <h2>Choose your sign</h2>
+    <h3>Who scores 5 points win the game!</h3>
+
+    <!-- Score display -->
+    <div class="score">
+      <span>Player Score: <span id="humanScore">0</span></span>
+      <span>Computer Score: <span id="computerScore">0</span></span>
+    </div>
+
+    <div class="images-game">
+      <img
+        src="./images/rock.png"
+        alt="rock image"
+        onclick="humanChoice('rock')"
+      />
+      <img
+        src="./images/paper.png"
+        alt="paper image"
+        onclick="humanChoice('paper')"
+      />
+      <img
+        src="./images/scissors.png"
+        alt="scissors image"
+        onclick="humanChoice('scissors')"
+      />
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

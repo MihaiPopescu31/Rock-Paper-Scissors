@@ -1,0 +1,50 @@
+/* Global styles */
+* {
+  background-color: aqua;
+}
+/*styling the h informations*/
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blueviolet;
+}
+
+h2,
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+/*images*/
+.images-game {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.images-game img {
+  height: 250px;
+  width: 250px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 2px solid black;
+  transition: transform 0.2s ease;
+}
+/*animation of the img containers*/
+.images-game img:active {
+  transform: scale(0.95);
+}
+
+/*Score*/
+.score {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.score span {
+  margin: 0 15px;
+}
